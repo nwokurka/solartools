@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+  line-height: 1.6;
+  position: relative;
+}
+
+#__next {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*  Notebook 1024px */
+@media (max-width: 64rem) {
+}
+
+/* Tablet 768px */
+@media (max-width: 48rem) {
+
+  #__next {
+    width: 100%;
+  }
+}
+
+/* Smartphone 480px */
+@media (max-width: 30rem) {
+}
