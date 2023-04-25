@@ -67,7 +67,7 @@ function CalculatorForm() {
 
   useEffect(() => {
     calc();
-  }, [loadeNasaData]);
+  }, [calc, loadeNasaData]);
 
   useEffect(() => {
     setAreaFactor(areaFactorData[azimut][tilt]);
@@ -77,6 +77,7 @@ function CalculatorForm() {
     return new Date(year, month, 0).getDate();
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   function calc() {
     let year = 2020;
     let yearMonth = 202001; //TODO: Make an avarage
