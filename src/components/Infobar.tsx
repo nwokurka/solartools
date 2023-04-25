@@ -25,7 +25,7 @@ const InfobarStyle = styled.div`
     border-right: solid;
     border-width: 1px;
     border-color: ${({ theme }) => theme.colors.primaryBorder};
-    transition: all 0.50s linear;
+    transition: all 0.5s linear;
     margin: 1px;
   }
 
@@ -40,7 +40,7 @@ function Infobar() {
 
   useEffect(() => {
     annualHandler();
-  }, [result]);
+  });
 
   function annualHandler() {
     var annualHandler = 0;

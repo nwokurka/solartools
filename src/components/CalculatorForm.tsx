@@ -7,7 +7,7 @@ import { Input } from "./styles/Input.style";
 import { Select } from "./styles/Select.style";
 import areaFactorData from "../data/area-factor.json";
 import LoadingWheel from "../components/LoadingWheel";
-import NasaData from "../data/NasaData.json"
+import NasaData from "../data/NasaData.json";
 
 const CalculatorFormStyle = styled.div`
   border-radius: 5px;
@@ -66,8 +66,8 @@ function CalculatorForm() {
   }, [url]);
 
   useEffect(() => {
-    calc()
-  },[loadeNasaData]);
+    calc();
+  }, [loadeNasaData]);
 
   useEffect(() => {
     setAreaFactor(areaFactorData[azimut][tilt]);
